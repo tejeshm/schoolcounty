@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>School County</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/listing.css">
+  <link rel="stylesheet" href="css/loginregister.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+	@media only screen and (max-width: 500px) {
+    input[type=text] {
+    width: 100%;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+	}
+
+	.jumbotron p {
+	font-size: 11px;
+
+	}
+
+}
+  </style>
+  <style>
+
+	@media only screen and (min-width: 500px) {
+    input[type=text] {
+    width: 50%;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+	}
+
+	.visible-xs {
+    display: block!important;
+}
+
+
+}
+
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+   
+
+	/* When the input field gets focus, change its width to 100% */
+	input[type=text]:focus {
+	    width: 100%;
+	}
+
+.jumbotron{
+background: url("img/h11-background-img.jpg") no-repeat center center;
+}
+
+.navbar-toggle{
+background-color: black;
+    border: 1px solid black;
+}
+.navbar-toggle .icon-bar{
+background-color: #fff;
+}
+
+.navbar-nav>li>a{
+background-color: mediumslateblue;
+    color: black;
+}
+
+.navbar-nav{
+margin: 0px -15px;
+}
+
+.fa,span{
+color:#fff;
+}
+
+
+
+/***Footer Css**/
+
+.footer1 {
+	padding-top: 40px;
+	padding-right: 0;
+	padding-bottom: 20px;
+	padding-left: 0;/*	border-top-width: 4px;
+	border-top-style: solid;
+	border-top-color: #003;*/
+}
+
+
+
+.title-widget {
+	color: #898989;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1;
+	position: relative;
+	text-transform: uppercase;
+	font-family: 'Fjalla One', sans-serif;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 25px;
+	margin-left: 0;
+	padding-left: 28px;
+}
+
+.title-widget::before {
+    background-color: #ea5644;
+    content: "";
+    height: 22px;
+    left: 0px;
+    position: absolute;
+    top: -2px;
+    width: 5px;
+}
+
+
+
+.widget_nav_menu ul {
+    list-style: outside none none;
+    padding-left: 0;
+}
+
+.widget_archive ul li {
+    background-color: rgba(0, 0, 0, 0.3);
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 7px;
+    width: 3px;
+}
+
+
+.widget_nav_menu ul li {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+	position: relative;
+    text-transform: uppercase;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    margin-bottom: 7px;
+    padding-bottom: 7px;
+	width:95%;
+}
+
+
+
+.title-median {
+    color: #636363;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 0 15px;
+    text-transform: uppercase;
+	font-family: 'Fjalla One', sans-serif;
+}
+
+.footerp p {font-family: 'Gudea', sans-serif; }
+
+
+#social:hover {
+    			-webkit-transform:scale(1.1); 
+-moz-transform:scale(1.1); 
+-o-transform:scale(1.1); 
+			}
+			#social {
+				-webkit-transform:scale(0.8);
+                /* Browser Variations: */
+-moz-transform:scale(0.8);
+-o-transform:scale(0.8); 
+-webkit-transition-duration: 0.5s; 
+-moz-transition-duration: 0.5s;
+-o-transition-duration: 0.5s;
+			}           
+/* 
+    Only Needed in Multi-Coloured Variation 
+                                               */
+			.social-fb {
+				color: #3B5998;
+			}
+			.social-tw {
+				color: #4099FF;
+			}
+			.social-gp {
+				color: #d34836;
+			}
+			.social-em {
+				color: #f39c12;
+			}
+			.nomargin { margin:0px; padding:0px;}
+
+
+
+
+
+.footer-bottom {
+    background-color: #15224f;
+    min-height: 30px;
+    width: 100%;
+}
+.copyright {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+}
+.design {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+    text-align: right;
+}
+.design a {
+    color: #fff;
+}
+
+/****/
+  </style>
+<script src="https://use.fontawesome.com/875eb12881.js"></script>
+</head>
+<body>
+
+<nav class="main-nav navbar navbar-fixed-top" style="background-color:mediumslateblue;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="color:#fff;">SchoolCounty</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <!--<ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>-->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="cd-signin" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	<li><a class="cd-signup" href="#"><span class="glyphicon glyphicon-log-in"></span> SignUp</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style>
+
+
+
+</style>
+
+
+<main class="cd-main-content" style="top:50px;">
+		<div class="cd-tab-filter-wrapper">
+			<div class="cd-tab-filter">
+				<ul class="cd-filters">
+					<li class="placeholder"> 
+						<a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+					</li> 
+					<li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
+					<li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Distance</a></li>
+					<li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">Budget</a></li>
+					<li class="filter" data-filter=".color-3"><a href="#0" data-type="color-3">Ranking</a></li>
+				</ul> <!-- cd-filters -->
+			</div> <!-- cd-tab-filter -->
+		</div> <!-- cd-tab-filter-wrapper -->
+
+		<section class="cd-gallery">
+			<ul>
+				<li class="mix color-3 check1 radio2 option3"><img src="img/img-1.jpg" alt="Image 1"></li>
+				<li class="mix color-2 check2 radio1 option2"><img src="img/img-2.jpg" alt="Image 2"></li>
+				<li class="mix color-1 check3 radio3 option1"><img src="img/img-3.jpg" alt="Image 3"></li>
+				<li class="mix color-3 check3 radio2 option4"><img src="img/img-4.jpg" alt="Image 4"></li>
+				<li class="mix color-1 check1 radio1 option2"><img src="img/img-5.jpg" alt="Image 5"></li>
+				<li class="mix color-2 check2 radio3 option3"><img src="img/img-6.jpg" alt="Image 6"></li>
+				<li class="mix color-3 check2 radio2 option1"><img src="img/img-7.jpg" alt="Image 7"></li>
+				<li class="mix color-1 check1 radio3 option4"><img src="img/img-8.jpg" alt="Image 8"></li>
+				<li class="mix color-2 check1 radio1 option3"><img src="img/img-9.jpg" alt="Image 9"></li>
+				<li class="mix color-3 check3 radio2 option4"><img src="img/img-10.jpg" alt="Image 10"></li>
+				<li class="mix color-1 check3 radio3 option2"><img src="img/img-11.jpg" alt="Image 11"></li>
+				<li class="mix color-2 check1 radio1 option1"><img src="img/img-12.jpg" alt="Image 12"></li>
+				<li class="gap"></li>
+				<li class="gap"></li>
+				<li class="gap"></li>
+			</ul>
+			<div class="cd-fail-message">No results found</div>
+		</section> <!-- cd-gallery -->
+
+		<div class="cd-filter">
+			<form>
+				<div class="cd-filter-block">
+					<h4>Search</h4>
+					
+					<div class="cd-filter-content">
+						<input type="search" placeholder="Try color-1,color-2,color-3...">
+					</div> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+
+				<div class="cd-filter-block">
+					<h4>Levels of Education</h4>
+
+					<ul class="cd-filter-content cd-filters list">
+						<li>
+							<input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
+			    			<label class="checkbox-label" for="checkbox1">Primary(1st-4th)</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
+							<label class="checkbox-label" for="checkbox2">Middle(5th-7th)</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
+							<label class="checkbox-label" for="checkbox3">Secondary(8th-10th)</label>
+						</li>
+					</ul> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+
+				<div class="cd-filter-block">
+					<h4>Select</h4>
+					
+					<div class="cd-filter-content">
+						<div class="cd-select cd-filters">
+							<select class="filter" name="selectThis" id="selectThis">
+								<option value="">Choose an Syllabus</option>
+								<option value=".option1">CBSE</option>
+								<option value=".option2">STATE BOARD</option>
+								<option value=".option3">ICSE</option>
+								<option value=".option4">IB</option>
+							</select>
+						</div> <!-- cd-select -->
+					</div> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+
+				<div class="cd-filter-block">
+					<h4>Type of School</h4>
+
+					<ul class="cd-filter-content cd-filters list">
+						<li>
+							<input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>
+							<label class="radio-label" for="radio1">Army</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".radio2" type="radio" name="radioButton" id="radio2">
+							<label class="radio-label" for="radio2">KV</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".radio3" type="radio" name="radioButton" id="radio3">
+							<label class="radio-label" for="radio3">International</label>
+						</li>
+					</ul> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+			</form>
+
+			<a href="#0" class="cd-close">Close</a>
+		</div> <!-- cd-filter -->
+
+		<a href="#0" class="cd-filter-trigger">Filters</a>
+	</main> <!-- cd-main-content -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer1">
+<div class="container">
+<div class="row"><!-- row -->
+            
+                <div class="col-lg-3 col-md-3"><!-- widgets column left -->
+                <ul class="list-unstyled clear-margins"><!-- widgets -->
+                        
+                        	<li class="widget-container widget_nav_menu"><!-- widgets list -->
+                    
+                                <h1 class="title-widget">Quick links</h1>
+                                
+                                <ul>
+                                	<li><a  href="#"><i class="fa fa-angle-double-right"></i> About Us</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i> Contact Us</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i> Success Stories</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i> PG Courses</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i> Achiever's Batch</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Regular Batch</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Test & Discussion</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Fast Track T & D</a></li>
+                                </ul>
+                    
+							</li>
+                            
+                        </ul>
+                         
+                      
+                </div><!-- widgets column left end -->
+                
+                
+                
+                <div class="col-lg-3 col-md-3"><!-- widgets column left -->
+            
+                <ul class="list-unstyled clear-margins"><!-- widgets -->
+                        
+                        	<li class="widget-container widget_nav_menu"><!-- widgets list -->
+                    
+                                <!--<h1 class="title-widget"></h1>-->
+                                
+                                <ul>
+ 									<li><a  href="#"><i class="fa fa-angle-double-right"></i>  Test Series Schedule</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Postal Coaching</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  PG Dr. Bhatia Books</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  UG Courses</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Satellite Education</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Study Centres</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  State P.G. Mocks</a></li>
+                                    <li><a  href="#" target="_blank"><i class="fa fa-angle-double-right"></i> Results</a></li>
+                                    
+                                </ul>
+                    
+							</li>
+                            
+                        </ul>
+                         
+                      
+                </div><!-- widgets column left end -->
+                
+                
+                
+                <div class="col-lg-3 col-md-3"><!-- widgets column left -->
+            
+                <ul class="list-unstyled clear-margins"><!-- widgets -->
+                        
+                        	<li class="widget-container widget_nav_menu"><!-- widgets list -->
+                    
+                                <!--<h1 class="title-widget"></h1>-->
+                                
+                                <ul>
+
+
+                <li><a href="#"><i class="fa fa-angle-double-right"></i> Enquiry Form</a></li>
+ 				<li><a href="#"><i class="fa fa-angle-double-right"></i> Online Test Series</a></li>
+				<li><a href="#"><i class="fa fa-angle-double-right"></i> Grand Tests Series</a></li>
+				<li><a href="#"><i class="fa fa-angle-double-right"></i> Subject Wise Test Series</a></li>
+				<li><a href="#"><i class="fa fa-angle-double-right"></i> Smart Book</a></li>
+				<li><a href="#"><i class="fa fa-angle-double-right"></i> Test Centres</a></li>
+                <li><a href="#"><i class="fa fa-angle-double-right"></i>  Admission Form</a></li>
+				<li><a href="#"><i class="fa fa-angle-double-right"></i>  Computer Live Test</a></li>
+
+                                </ul>
+                    
+							</li>
+                            
+                        </ul>
+                         
+                      
+                </div><!-- widgets column left end -->
+                
+                
+                <div class="col-lg-3 col-md-3"><!-- widgets column center -->
+                
+                   
+                    
+                        <ul class="list-unstyled clear-margins"><!-- widgets -->
+                        
+                        	<li class="widget-container widget_recent_news"><!-- widgets list -->
+                    
+                                <h1 class="title-widget">Contact Detail </h1>
+                                
+                                <div class="footerp"> 
+                                
+                                <h2 class="title-median">SchoolCounty</h2>
+                                <p><b>Email id:</b> <a href="mailto:info@webenlance.com">info@schoolcounty.com</a></p>
+                                <p><b>Helpline Numbers </b>
+
+    <b style="color:#ffc106;">(8AM to 10PM):</b>  +91-813ZXC90, +91-81MBN0010  </p>
+    
+    <p><b>Corp Office / Postal Address</b></p>
+    <p><b>Phone Numbers : </b>704QWE160, </p>
+    <p> 011-27568832, 9868387223</p>
+                                </div>
+                                
+                                <div class="social-icons">
+                                
+                                	<ul class="nomargin">
+                                    
+                <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social-fb" id="social"></i></a>
+	            <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social-tw" id="social"></i></a>
+	            <a href="https://plus.google.com/+Bootsnipp-page"><i class="fa fa-google-plus-square fa-3x social-gp" id="social"></i></a>
+	            <a href="mailto:bootsnipp@gmail.com"><i class="fa fa-envelope-square fa-3x social-em" id="social"></i></a>
+		    <a href="mailto:linkedin@gmail.com"><i class="fa fa-linkedin-square fa-3x social-fb" id="social"></i></a>
+                                    
+                                    </ul>
+                                </div>
+                    		</li>
+                          </ul>
+                       </div>
+                </div>
+</div>
+</footer>
+<!--header-->
+
+<div class="footer-bottom">
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+				<div class="copyright">
+
+					© 2017, SchoolCounty, All rights reserved
+
+				</div>
+
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+				<div class="design">
+
+					 <a href="#">SchoolCounty </a> |  <a target="_blank" href="http://www.webenlance.com">Dummy Content</a>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+<!--<script src="jquery.mixitup.min.js"></script>-->
+<script src="mixitup.js"></script>
+<script src="filter.js"></script> 
+<script>
+jQuery(document).ready(function($){
+	var formModal = $('.cd-user-modal'),
+		formLogin = formModal.find('#cd-login'),
+		formSignup = formModal.find('#cd-signup'),
+		formForgotPassword = formModal.find('#cd-reset-password'),
+		formModalTab = $('.cd-switcher'),
+		tabLogin = formModalTab.children('li').eq(0).children('a'),
+		tabSignup = formModalTab.children('li').eq(1).children('a'),
+		forgotPasswordLink = formLogin.find('.cd-form-bottom-message a'),
+		backToLoginLink = formForgotPassword.find('.cd-form-bottom-message a'),
+		mainNav = $('.main-nav');
+
+	//open modal
+	mainNav.on('click', function(event){
+		$(event.target).is(mainNav) && mainNav.children('ul').toggleClass('is-visible');
+	});
+
+	//open sign-up form
+	mainNav.on('click', '.cd-signup', signup_selected);
+	//open login-form form
+	mainNav.on('click', '.cd-signin', login_selected);
+
+	//close modal
+	formModal.on('click', function(event){
+		if( $(event.target).is(formModal) || $(event.target).is('.cd-close-form') ) {
+			formModal.removeClass('is-visible');
+		}	
+	});
+	//close modal when clicking the esc keyboard button
+	$(document).keyup(function(event){
+    	if(event.which=='27'){
+    		formModal.removeClass('is-visible');
+	    }
+    });
+
+	//switch from a tab to another
+	formModalTab.on('click', function(event) {
+		event.preventDefault();
+		( $(event.target).is( tabLogin ) ) ? login_selected() : signup_selected();
+	});
+
+	//hide or show password
+	$('.hide-password').on('click', function(){
+		var togglePass= $(this),
+			passwordField = togglePass.prev('input');
+		
+		( 'password' == passwordField.attr('type') ) ? passwordField.attr('type', 'text') : passwordField.attr('type', 'password');
+		( 'Hide' == togglePass.text() ) ? togglePass.text('Show') : togglePass.text('Hide');
+		//focus and move cursor to the end of input field
+		passwordField.putCursorAtEnd();
+	});
+
+	//show forgot-password form 
+	forgotPasswordLink.on('click', function(event){
+		event.preventDefault();
+		forgot_password_selected();
+	});
+
+	//back to login from the forgot-password form
+	backToLoginLink.on('click', function(event){
+		event.preventDefault();
+		login_selected();
+	});
+
+	function login_selected(){
+		mainNav.children('ul').removeClass('is-visible');
+		formModal.addClass('is-visible');
+		formLogin.addClass('is-selected');
+		formSignup.removeClass('is-selected');
+		formForgotPassword.removeClass('is-selected');
+		tabLogin.addClass('selected');
+		tabSignup.removeClass('selected');
+	}
+
+	function signup_selected(){
+		mainNav.children('ul').removeClass('is-visible');
+		formModal.addClass('is-visible');
+		formLogin.removeClass('is-selected');
+		formSignup.addClass('is-selected');
+		formForgotPassword.removeClass('is-selected');
+		tabLogin.removeClass('selected');
+		tabSignup.addClass('selected');
+	}
+
+	function forgot_password_selected(){
+		formLogin.removeClass('is-selected');
+		formSignup.removeClass('is-selected');
+		formForgotPassword.addClass('is-selected');
+	}
+
+	//REMOVE THIS - it's just to show error messages 
+	formLogin.find('input[type="submit"]').on('click', function(event){
+		event.preventDefault();
+		formLogin.find('input[type="email"]').toggleClass('has-error').next('span').toggleClass('is-visible');
+	});
+	formSignup.find('input[type="submit"]').on('click', function(event){
+		event.preventDefault();
+		formSignup.find('input[type="email"]').toggleClass('has-error').next('span').toggleClass('is-visible');
+	});
+
+});
+
+
+</script>
+<script type="text/javascript">
+$(document).ready(function () {
+    //Disable cut copy paste
+    $('body').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+   
+    //Disable mouse right click
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+});
+</script>
+<script>
+document.onkeydown = function(e) {
+        if (e.ctrlKey && 
+            (e.keyCode === 67 || 
+             e.keyCode === 86 || 
+             e.keyCode === 85 || 
+             e.keyCode === 117)) {
+            alert('Restricted');
+            return false;
+        } else {
+            return true;
+        }
+};
+</script>
+</body>
+</html>
+
