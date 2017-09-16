@@ -9,6 +9,7 @@
 
   <!--<link rel="stylesheet" href="css/listing.css">
   <link rel="stylesheet" href="css/loginregister.css">-->
+<link rel="stylesheet" href="css/custom.css">
    <link rel="stylesheet" href="css/gr.css">
    <link rel="stylesheet" href="css/reset.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -28,212 +29,7 @@
 
 }
   </style>
-  <style>
-
-	@media only screen and (min-width: 500px) {
-    input[type=text] {
-    width: 50%;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-	}
-
-	.visible-xs {
-    display: block!important;
-}
-
-
-}
-
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-   
-
-	/* When the input field gets focus, change its width to 100% */
-	input[type=text]:focus {
-	    width: 100%;
-	}
-
-.jumbotron{
-background: url("img/h11-background-img.jpg") no-repeat center center;
-}
-
-.navbar-toggle{
-background-color: black;
-    border: 1px solid black;
-}
-.navbar-toggle .icon-bar{
-background-color: #fff;
-}
-
-.navbar-nav>li>a{
-background-color: mediumslateblue;
-    color: black;
-}
-
-.navbar-nav{
-margin: 0px -15px;
-}
-
-.fa,span{
-color:#fff;
-}
-
-
-
-/***Footer Css**/
-
-.footer1 {
-	padding-top: 40px;
-	padding-right: 0;
-	padding-bottom: 20px;
-	padding-left: 0;/*	border-top-width: 4px;
-	border-top-style: solid;
-	border-top-color: #003;*/
-}
-
-
-
-.title-widget {
-	color: #898989;
-	font-size: 20px;
-	font-weight: 300;
-	line-height: 1;
-	position: relative;
-	text-transform: uppercase;
-	font-family: 'Fjalla One', sans-serif;
-	margin-top: 0;
-	margin-right: 0;
-	margin-bottom: 25px;
-	margin-left: 0;
-	padding-left: 28px;
-}
-
-.title-widget::before {
-    background-color: #ea5644;
-    content: "";
-    height: 22px;
-    left: 0px;
-    position: absolute;
-    top: -2px;
-    width: 5px;
-}
-
-
-
-.widget_nav_menu ul {
-    list-style: outside none none;
-    padding-left: 0;
-}
-
-.widget_archive ul li {
-    background-color: rgba(0, 0, 0, 0.3);
-    content: "";
-    height: 3px;
-    left: 0;
-    position: absolute;
-    top: 7px;
-    width: 3px;
-}
-
-
-.widget_nav_menu ul li {
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 20px;
-	position: relative;
-    text-transform: uppercase;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    margin-bottom: 7px;
-    padding-bottom: 7px;
-	width:95%;
-}
-
-
-
-.title-median {
-    color: #636363;
-    font-size: 20px;
-    line-height: 20px;
-    margin: 0 0 15px;
-    text-transform: uppercase;
-	font-family: 'Fjalla One', sans-serif;
-}
-
-.footerp p {font-family: 'Gudea', sans-serif; }
-
-
-#social:hover {
-    			-webkit-transform:scale(1.1); 
--moz-transform:scale(1.1); 
--o-transform:scale(1.1); 
-			}
-			#social {
-				-webkit-transform:scale(0.8);
-                /* Browser Variations: */
--moz-transform:scale(0.8);
--o-transform:scale(0.8); 
--webkit-transition-duration: 0.5s; 
--moz-transition-duration: 0.5s;
--o-transition-duration: 0.5s;
-			}           
-/* 
-    Only Needed in Multi-Coloured Variation 
-                                               */
-			.social-fb {
-				color: #3B5998;
-			}
-			.social-tw {
-				color: #4099FF;
-			}
-			.social-gp {
-				color: #d34836;
-			}
-			.social-em {
-				color: #f39c12;
-			}
-			.nomargin { margin:0px; padding:0px;}
-
-
-
-
-
-.footer-bottom {
-    background-color: #15224f;
-    min-height: 30px;
-    width: 100%;
-}
-.copyright {
-    color: #fff;
-    line-height: 30px;
-    min-height: 30px;
-    padding: 7px 0;
-}
-.design {
-    color: #fff;
-    line-height: 30px;
-    min-height: 30px;
-    padding: 7px 0;
-    text-align: right;
-}
-.design a {
-    color: #fff;
-}
-
-/****/
-
-.fa{
-color:black;
-}
-  </style>
+ <link rel="stylesheet" href="css/custom.css">
 <script src="https://use.fontawesome.com/875eb12881.js"></script>
 </head>
 <body>
@@ -246,7 +42,7 @@ color:black;
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="index.html" style="color:#fff;">SchoolCounty</a>
+      <a class="navbar-brand" href="index.html" style="color:#fff;    font-size: 50px;">SchoolCounty</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <!--<ul class="nav navbar-nav">
@@ -266,6 +62,130 @@ color:black;
 
 <div class="full-width" style="clear: both;    margin-top: 60px;">
 
+<div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
+		<div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+			<ul class="cd-switcher">
+				<li><a href="#0">Sign in</a></li>
+				<li><a href="#0">New account</a></li>
+			</ul>
+
+			<div id="cd-login"> <!-- log in form -->
+				<form class="cd-form">
+					<p class="fieldset">
+						<label class="image-replace cd-email" for="signin-email">E-mail</label>
+						<input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+						<span class="cd-error-message">Error message here!</span>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace cd-password" for="signin-password">Password</label>
+						<input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
+						<a href="#0" class="hide-password">Hide</a>
+						<span class="cd-error-message">Error message here!</span>
+					</p>
+
+					<p class="fieldset">
+						<input type="checkbox" id="remember-me" checked>
+						<label for="remember-me">Remember me</label>
+					</p>
+
+					<p class="fieldset">
+						<input class="full-width" type="submit" value="Login">
+					</p>
+				</form>
+				
+				<p class="cd-form-bottom-message"><a href="#0">Forgot your password?</a></p>
+				<!-- <a href="#0" class="cd-close-form">Close</a> -->
+			</div> <!-- cd-login -->
+
+			<div id="cd-signup"> <!-- sign up form -->
+
+				<div class="cd-form row">
+			    	    <div class="col-xs-12 col-md-3 col-sm-2">
+						<a href="#" class="btn btn-lg btn-block omb_btn-facebook" style="    background: #3b5998;">
+							<i class="fa fa-facebook visible-xs"></i>
+							<span>Facebook</span>
+						</a>
+					</div>
+					<div class="col-xs-12 col-md-3 col-sm-2">
+						<a href="#" class="btn btn-lg btn-block omb_btn-twitter" style="    background: #00aced;">
+							<i class="fa fa-twitter visible-xs"></i>
+							<span>Twitter</span>
+						</a>
+					</div>	
+					<div class="col-xs-12 col-md-3 col-sm-2">
+						<a href="#" class="btn btn-lg btn-block omb_btn-google" style="background: #c32f10;">
+							<i class="fa fa-google-plus visible-xs"></i>
+							<span>Google+</span>
+						</a>
+					</div>
+					<div class="col-xs-12 col-md-3 col-sm-2">
+						<a href="#" class="btn btn-lg btn-block omb_btn-linkedin" style="background: #a4c639;">
+							<i class="fa fa-linkedin-square visible-xs"></i>
+							<span>Linkedin</span>
+						</a>
+					</div>	
+					</div>
+
+			
+
+							
+
+
+
+				<form class="cd-form">
+					<p class="fieldset">
+						<label class="image-replace cd-username" for="signup-username">Username</label>
+						<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
+						<span class="cd-error-message">Error message here!</span>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace cd-email" for="signup-email">E-mail</label>
+						<input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+						<span class="cd-error-message">Error message here!</span>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace cd-password" for="signup-password">Password</label>
+						<input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
+						<a href="#0" class="hide-password">Hide</a>
+						<span class="cd-error-message">Error message here!</span>
+					</p>
+
+					<p class="fieldset">
+						<input type="checkbox" id="accept-terms">
+						<label for="accept-terms">I agree to the <a href="#0">Terms & Conditions</a></label>
+					</p>
+
+					<p class="fieldset">
+						<input class="full-width has-padding" type="submit" value="Create account">
+					</p>
+				</form>
+
+				<!-- <a href="#0" class="cd-close-form">Close</a> -->
+			</div> <!-- cd-signup -->
+
+			<div id="cd-reset-password"> <!-- reset password form -->
+				<p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+
+				<form class="cd-form">
+					<p class="fieldset">
+						<label class="image-replace cd-email" for="reset-email">E-mail</label>
+						<input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+						<span class="cd-error-message">Error message here!</span>
+					</p>
+
+					<p class="fieldset">
+						<input class="full-width has-padding" type="submit" value="Reset password">
+					</p>
+				</form>
+
+				<p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
+			</div> <!-- cd-reset-password -->
+		</div> <!-- cd-user-modal-container -->
+	</div> <!-- cd-user-modal -->
+
 <header style="padding: 20px;">
 			<h2>Compare Schools</h2>
 
@@ -284,8 +204,9 @@ color:black;
     
               
 <div class="mam">
-  <div class="js-schoolName full-width notranslate" style="height: 21px;"><a style="line-height: 1.1em" class="open-sans_sb mbs font-size-medium" href="https://www.greatschools.org/missouri/moberly/1250-Moberly-Area-Technical-Center/">Moberly Area Technical Center</a></div>
-  <div class="ptm full-width js-gradeLevel" style="height: 31px;">Public district | 9-12</div>
+  <div class="js-schoolName full-width notranslate" style="height: 21px;"><a style="line-height: 1.1em" class="open-sans_sb mbs font-size-medium" href="detail.html">Wisdom School
+er</a></div>
+  <div class="ptm full-width js-gradeLevel" style="height: 31px;">Rajaji Nagar, bangalore-11</div>
 </div>              <div class="ptl tac">
     <div class="pbm phl">
       <button class="btn btn-default tal clearfix js-save-this-school-button" data-link-value="1250" style="width:80%" rel="" data-link-use-new-window="">
@@ -304,14 +225,14 @@ color:black;
 
     
     <div class="phm">
-  <span class="open-sans_sb">GreatSchools Rating</span><br>
+  <span class="open-sans_sb">SchoolCounty Rating</span><br>
 </div>
 
 
 <div class="phm">
   <table class="full-width">
         <tbody><tr>
-          <td>GreatSchools rating</td>
+          <td>SchoolCounty rating</td>
           <td class="tac open-sans_sb" style="width: 40px">
 <div class="gs-rating-sm  ma">
   <div class="dib">
@@ -364,7 +285,7 @@ color:black;
           <td class="tac open-sans_sb" style="width: 40px"><div class="pr js-compareNoDataWrapper">
   <div class="pointer js-compareNoDataSymbol"><i class="iconx16 i-16-question-mark"></i></div>
   <div class="panel pa dn tal pal font-size-xs open-sans js-compareNoDataPopup">
-    This school has not provided GreatSchools with information about this program/service.
+    This school has not provided SchoolCounty with information about this program/service.
     Contact the school directly to find out more.
   </div>
 </div></td>
@@ -377,7 +298,7 @@ color:black;
           <td class="tac open-sans_sb" style="width: 40px"><div class="pr js-compareNoDataWrapper">
   <div class="pointer js-compareNoDataSymbol"><i class="iconx16 i-16-question-mark"></i></div>
   <div class="panel pa dn tal pal font-size-xs open-sans js-compareNoDataPopup">
-    This school has not provided GreatSchools with information about this program/service.
+    This school has not provided SchoolCounty with information about this program/service.
     Contact the school directly to find out more.
   </div>
 </div></td>
@@ -390,7 +311,7 @@ color:black;
           <td class="tac open-sans_sb" style="width: 40px"><div class="pr js-compareNoDataWrapper">
   <div class="pointer js-compareNoDataSymbol"><i class="iconx16 i-16-question-mark"></i></div>
   <div class="panel pa dn tal pal font-size-xs open-sans js-compareNoDataPopup">
-    This school has not provided GreatSchools with information about this program/service.
+    This school has not provided SchoolCounty with information about this program/service.
     Contact the school directly to find out more.
   </div>
 </div></td>
@@ -412,7 +333,7 @@ color:black;
           <td class="tac open-sans_sb" style="width: 40px"><div class="pr js-compareNoDataWrapper">
   <div class="pointer js-compareNoDataSymbol"><i class="iconx16 i-16-question-mark"></i></div>
   <div class="panel pa dn tal pal font-size-xs open-sans js-compareNoDataPopup">
-    This school has not provided GreatSchools with information about this program/service.
+    This school has not provided SchoolCounty with information about this program/service.
     Contact the school directly to find out more.
   </div>
 </div></td>
@@ -425,7 +346,7 @@ color:black;
           <td class="tac open-sans_sb" style="width: 40px"><div class="pr js-compareNoDataWrapper">
   <div class="pointer js-compareNoDataSymbol"><i class="iconx16 i-16-question-mark"></i></div>
   <div class="panel pa dn tal pal font-size-xs open-sans js-compareNoDataPopup">
-    This school has not provided GreatSchools with information about this program/service.
+    This school has not provided SchoolCounty with information about this program/service.
     Contact the school directly to find out more.
   </div>
 </div></td>
@@ -438,7 +359,7 @@ color:black;
           <td class="tac open-sans_sb" style="width: 40px"><div class="pr js-compareNoDataWrapper">
   <div class="pointer js-compareNoDataSymbol"><i class="iconx16 i-16-question-mark"></i></div>
   <div class="panel pa dn tal pal font-size-xs open-sans js-compareNoDataPopup">
-    This school has not provided GreatSchools with information about this program/service.
+    This school has not provided SchoolCounty with information about this program/service.
     Contact the school directly to find out more.
   </div>
 </div></td>
@@ -451,7 +372,7 @@ color:black;
           <td class="tac open-sans_sb" style="width: 40px"><div class="pr js-compareNoDataWrapper">
   <div class="pointer js-compareNoDataSymbol"><i class="iconx16 i-16-question-mark"></i></div>
   <div class="panel pa dn tal pal font-size-xs open-sans js-compareNoDataPopup">
-    This school has not provided GreatSchools with information about this program/service.
+    This school has not provided SchoolCounty with information about this program/service.
     Contact the school directly to find out more.
   </div>
 </div></td>
@@ -555,7 +476,7 @@ color:black;
   </div>
 </div>              <div class="ptl tac">
     <div class="pbm phl">
-      <button class="btn btn-primary tac clearfix js-button-link" data-link-value="https://www.greatschools.org/missouri/moberly/1250-Moberly-Area-Technical-Center/" style="width:80%" rel="" data-link-use-new-window="">
+      <button class="btn btn-primary tac clearfix js-button-link" data-link-value="https://www.SchoolCounty.org/missouri/moberly/1250-Moberly-Area-Technical-Center/" style="width:80%" rel="" data-link-use-new-window="">
         <span class="vat  mrs"></span>
         View full profile
       </button>
@@ -567,7 +488,7 @@ color:black;
       </button>
     </div>
     <div class="pbm phl">
-      <button class="btn btn-default tal clearfix js-button-link" data-link-value="https://www.zillow.com/MO-65270?cbpartner=Great+Schools&amp;utm_source=GreatSchools&amp;utm_medium=referral&amp;utm_campaign=schoolsearch" style="width:80%" rel="nofollow" data-link-use-new-window="true">
+      <button class="btn btn-default tal clearfix js-button-link" data-link-value="https://www.zillow.com/MO-65270?cbpartner=Great+Schools&amp;utm_source=SchoolCounty&amp;utm_medium=referral&amp;utm_campaign=schoolsearch" style="width:80%" rel="nofollow" data-link-use-new-window="true">
         <span class="vat iconx16 i-16-blue-home mrs"></span>
         Homes for sale
       </button>
@@ -582,8 +503,9 @@ color:black;
     
               
 <div class="mam">
-  <div class="js-schoolName full-width notranslate" style="height: 21px;"><a style="line-height: 1.1em" class="open-sans_sb mbs font-size-medium" href="https://www.greatschools.org/missouri/moberly/1255-Moberly-Middle-School/">Moberly Middle School</a></div>
-  <div class="ptm full-width js-gradeLevel" style="height: 31px;">Public district | 6-8</div>
+  <div class="js-schoolName full-width notranslate" style="height: 21px;"><a style="line-height: 1.1em" class="open-sans_sb mbs font-size-medium" href="detail.html">DPS Bangalore South
+</a></div>
+  <div class="ptm full-width js-gradeLevel" style="height: 31px;">kanakapura Road, bangalore-21	</div>
 </div>              <div class="ptl tac">
     <div class="pbm phl">
       <button class="btn btn-default tal clearfix js-save-this-school-button" data-link-value="1255" style="width:80%" rel="" data-link-use-new-window="">
@@ -602,14 +524,14 @@ color:black;
 
     
     <div class="phm">
-  <span class="open-sans_sb">GreatSchools Rating</span><br>
+  <span class="open-sans_sb">SchoolCounty Rating</span><br>
 </div>
 
 
 <div class="phm">
   <table class="full-width">
         <tbody><tr>
-          <td>GreatSchools rating</td>
+          <td>SchoolCounty rating</td>
           <td class="tac open-sans_sb" style="width: 40px">
 <div class="gs-rating-sm average ma">
   <div class="dib">
@@ -662,7 +584,7 @@ color:black;
           <td class="tac open-sans_sb" style="width: 40px"><div class="pr js-compareNoDataWrapper">
   <div class="pointer js-compareNoDataSymbol"><i class="iconx16 i-16-question-mark"></i></div>
   <div class="panel pa dn tal pal font-size-xs open-sans js-compareNoDataPopup">
-    This school has not provided GreatSchools with information about this program/service.
+    This school has not provided SchoolCounty with information about this program/service.
     Contact the school directly to find out more.
   </div>
 </div></td>
@@ -675,7 +597,7 @@ color:black;
           <td class="tac open-sans_sb" style="width: 40px"><div class="pr js-compareNoDataWrapper">
   <div class="pointer js-compareNoDataSymbol"><i class="iconx16 i-16-question-mark"></i></div>
   <div class="panel pa dn tal pal font-size-xs open-sans js-compareNoDataPopup">
-    This school has not provided GreatSchools with information about this program/service.
+    This school has not provided SchoolCounty with information about this program/service.
     Contact the school directly to find out more.
   </div>
 </div></td>
@@ -688,7 +610,7 @@ color:black;
           <td class="tac open-sans_sb" style="width: 40px"><div class="pr js-compareNoDataWrapper">
   <div class="pointer js-compareNoDataSymbol"><i class="iconx16 i-16-question-mark"></i></div>
   <div class="panel pa dn tal pal font-size-xs open-sans js-compareNoDataPopup">
-    This school has not provided GreatSchools with information about this program/service.
+    This school has not provided SchoolCounty with information about this program/service.
     Contact the school directly to find out more.
   </div>
 </div></td>
@@ -710,7 +632,7 @@ color:black;
           <td class="tac open-sans_sb" style="width: 40px"><div class="pr js-compareNoDataWrapper">
   <div class="pointer js-compareNoDataSymbol"><i class="iconx16 i-16-question-mark"></i></div>
   <div class="panel pa dn tal pal font-size-xs open-sans js-compareNoDataPopup">
-    This school has not provided GreatSchools with information about this program/service.
+    This school has not provided SchoolCounty with information about this program/service.
     Contact the school directly to find out more.
   </div>
 </div></td>
@@ -723,7 +645,7 @@ color:black;
           <td class="tac open-sans_sb" style="width: 40px"><div class="pr js-compareNoDataWrapper">
   <div class="pointer js-compareNoDataSymbol"><i class="iconx16 i-16-question-mark"></i></div>
   <div class="panel pa dn tal pal font-size-xs open-sans js-compareNoDataPopup">
-    This school has not provided GreatSchools with information about this program/service.
+    This school has not provided SchoolCounty with information about this program/service.
     Contact the school directly to find out more.
   </div>
 </div></td>
@@ -736,7 +658,7 @@ color:black;
           <td class="tac open-sans_sb" style="width: 40px"><div class="pr js-compareNoDataWrapper">
   <div class="pointer js-compareNoDataSymbol"><i class="iconx16 i-16-question-mark"></i></div>
   <div class="panel pa dn tal pal font-size-xs open-sans js-compareNoDataPopup">
-    This school has not provided GreatSchools with information about this program/service.
+    This school has not provided SchoolCounty with information about this program/service.
     Contact the school directly to find out more.
   </div>
 </div></td>
@@ -749,7 +671,7 @@ color:black;
           <td class="tac open-sans_sb" style="width: 40px"><div class="pr js-compareNoDataWrapper">
   <div class="pointer js-compareNoDataSymbol"><i class="iconx16 i-16-question-mark"></i></div>
   <div class="panel pa dn tal pal font-size-xs open-sans js-compareNoDataPopup">
-    This school has not provided GreatSchools with information about this program/service.
+    This school has not provided SchoolCounty with information about this program/service.
     Contact the school directly to find out more.
   </div>
 </div></td>
@@ -857,7 +779,7 @@ color:black;
   </div>
 </div>              <div class="ptl tac">
     <div class="pbm phl">
-      <button class="btn btn-primary tac clearfix js-button-link" data-link-value="https://www.greatschools.org/missouri/moberly/1255-Moberly-Middle-School/" style="width:80%" rel="" data-link-use-new-window="">
+      <button class="btn btn-primary tac clearfix js-button-link" data-link-value="https://www.SchoolCounty.org/missouri/moberly/1255-Moberly-Middle-School/" style="width:80%" rel="" data-link-use-new-window="">
         <span class="vat  mrs"></span>
         View full profile
       </button>
@@ -869,7 +791,7 @@ color:black;
       </button>
     </div>
     <div class="pbm phl">
-      <button class="btn btn-default tal clearfix js-button-link" data-link-value="https://www.zillow.com/MO-65270?cbpartner=Great+Schools&amp;utm_source=GreatSchools&amp;utm_medium=referral&amp;utm_campaign=schoolsearch" style="width:80%" rel="nofollow" data-link-use-new-window="true">
+      <button class="btn btn-default tal clearfix js-button-link" data-link-value="https://www.zillow.com/MO-65270?cbpartner=Great+Schools&amp;utm_source=SchoolCounty&amp;utm_medium=referral&amp;utm_campaign=schoolsearch" style="width:80%" rel="nofollow" data-link-use-new-window="true">
         <span class="vat iconx16 i-16-blue-home mrs"></span>
         Homes for sale
       </button>
@@ -884,8 +806,9 @@ color:black;
     
               
 <div class="mam">
-  <div class="js-schoolName full-width notranslate" style="height: 21px;"><a style="line-height: 1.1em" class="open-sans_sb mbs font-size-medium" href="https://www.greatschools.org/missouri/moberly/2849-Maranatha-Adventist-School/">Maranatha Adventist School</a></div>
-  <div class="ptm full-width js-gradeLevel" style="height: 31px;">Private | K-8</div>
+  <div class="js-schoolName full-width notranslate" style="height: 21px;"><a style="line-height: 1.1em" class="open-sans_sb mbs font-size-medium" href="detail.html">K.V.HAL School
+</a></div>
+  <div class="ptm full-width js-gradeLevel" style="height: 31px;">HAL Road, bangalore-14</div>
 </div>              <div class="ptl tac">
     <div class="pbm phl">
       <button class="btn btn-default tal clearfix js-save-this-school-button" data-link-value="2849" style="width:80%" rel="" data-link-use-new-window="">
@@ -904,14 +827,14 @@ color:black;
 
     
     <div class="phm">
-  <span class="open-sans_sb">GreatSchools Rating</span><br>
+  <span class="open-sans_sb">SchoolCounty Rating</span><br>
 </div>
 
 
 <div class="phm">
   <table class="full-width">
         <tbody><tr>
-          <td>GreatSchools rating</td>
+          <td>SchoolCounty rating</td>
           <td class="tac open-sans_sb" style="width: 40px">
 <div class="gs-rating-sm  ma">
   <div class="dib">
@@ -964,7 +887,7 @@ color:black;
           <td class="tac open-sans_sb" style="width: 40px"><div class="pr js-compareNoDataWrapper">
   <div class="pointer js-compareNoDataSymbol"><i class="iconx16 i-16-question-mark"></i></div>
   <div class="panel pa dn tal pal font-size-xs open-sans js-compareNoDataPopup">
-    This school has not provided GreatSchools with information about this program/service.
+    This school has not provided SchoolCounty with information about this program/service.
     Contact the school directly to find out more.
   </div>
 </div></td>
@@ -977,7 +900,7 @@ color:black;
           <td class="tac open-sans_sb" style="width: 40px"><div class="pr js-compareNoDataWrapper">
   <div class="pointer js-compareNoDataSymbol"><i class="iconx16 i-16-question-mark"></i></div>
   <div class="panel pa dn tal pal font-size-xs open-sans js-compareNoDataPopup">
-    This school has not provided GreatSchools with information about this program/service.
+    This school has not provided SchoolCounty with information about this program/service.
     Contact the school directly to find out more.
   </div>
 </div></td>
@@ -990,7 +913,7 @@ color:black;
           <td class="tac open-sans_sb" style="width: 40px"><div class="pr js-compareNoDataWrapper">
   <div class="pointer js-compareNoDataSymbol"><i class="iconx16 i-16-question-mark"></i></div>
   <div class="panel pa dn tal pal font-size-xs open-sans js-compareNoDataPopup">
-    This school has not provided GreatSchools with information about this program/service.
+    This school has not provided SchoolCounty with information about this program/service.
     Contact the school directly to find out more.
   </div>
 </div></td>
@@ -1012,7 +935,7 @@ color:black;
           <td class="tac open-sans_sb" style="width: 40px"><div class="pr js-compareNoDataWrapper">
   <div class="pointer js-compareNoDataSymbol"><i class="iconx16 i-16-question-mark"></i></div>
   <div class="panel pa dn tal pal font-size-xs open-sans js-compareNoDataPopup">
-    This school has not provided GreatSchools with information about this program/service.
+    This school has not provided SchoolCounty with information about this program/service.
     Contact the school directly to find out more.
   </div>
 </div></td>
@@ -1025,7 +948,7 @@ color:black;
           <td class="tac open-sans_sb" style="width: 40px"><div class="pr js-compareNoDataWrapper">
   <div class="pointer js-compareNoDataSymbol"><i class="iconx16 i-16-question-mark"></i></div>
   <div class="panel pa dn tal pal font-size-xs open-sans js-compareNoDataPopup">
-    This school has not provided GreatSchools with information about this program/service.
+    This school has not provided SchoolCounty with information about this program/service.
     Contact the school directly to find out more.
   </div>
 </div></td>
@@ -1038,7 +961,7 @@ color:black;
           <td class="tac open-sans_sb" style="width: 40px"><div class="pr js-compareNoDataWrapper">
   <div class="pointer js-compareNoDataSymbol"><i class="iconx16 i-16-question-mark"></i></div>
   <div class="panel pa dn tal pal font-size-xs open-sans js-compareNoDataPopup">
-    This school has not provided GreatSchools with information about this program/service.
+    This school has not provided SchoolCounty with information about this program/service.
     Contact the school directly to find out more.
   </div>
 </div></td>
@@ -1051,7 +974,7 @@ color:black;
           <td class="tac open-sans_sb" style="width: 40px"><div class="pr js-compareNoDataWrapper">
   <div class="pointer js-compareNoDataSymbol"><i class="iconx16 i-16-question-mark"></i></div>
   <div class="panel pa dn tal pal font-size-xs open-sans js-compareNoDataPopup">
-    This school has not provided GreatSchools with information about this program/service.
+    This school has not provided SchoolCounty with information about this program/service.
     Contact the school directly to find out more.
   </div>
 </div></td>
@@ -1159,7 +1082,7 @@ color:black;
   </div>
 </div>              <div class="ptl tac">
     <div class="pbm phl">
-      <button class="btn btn-primary tac clearfix js-button-link" data-link-value="https://www.greatschools.org/missouri/moberly/2849-Maranatha-Adventist-School/" style="width:80%" rel="" data-link-use-new-window="">
+      <button class="btn btn-primary tac clearfix js-button-link" data-link-value="https://www.SchoolCounty.org/missouri/moberly/2849-Maranatha-Adventist-School/" style="width:80%" rel="" data-link-use-new-window="">
         <span class="vat  mrs"></span>
         View full profile
       </button>
@@ -1171,7 +1094,7 @@ color:black;
       </button>
     </div>
     <div class="pbm phl">
-      <button class="btn btn-default tal clearfix js-button-link" data-link-value="https://www.zillow.com/MO-65270?cbpartner=Great+Schools&amp;utm_source=GreatSchools&amp;utm_medium=referral&amp;utm_campaign=schoolsearch" style="width:80%" rel="nofollow" data-link-use-new-window="true">
+      <button class="btn btn-default tal clearfix js-button-link" data-link-value="https://www.zillow.com/MO-65270?cbpartner=Great+Schools&amp;utm_source=SchoolCounty&amp;utm_medium=referral&amp;utm_campaign=schoolsearch" style="width:80%" rel="nofollow" data-link-use-new-window="true">
         <span class="vat iconx16 i-16-blue-home mrs"></span>
         Homes for sale
       </button>
@@ -1186,8 +1109,9 @@ color:black;
     
               
 <div class="mam">
-  <div class="js-schoolName full-width notranslate" style="height: 21px;"><a style="line-height: 1.1em" class="open-sans_sb mbs font-size-medium" href="https://www.greatschools.org/missouri/moberly/4491-Zion-Lutheran-Pre-School/">Zion Lutheran Pre-School</a></div>
-  <div class="ptm full-width js-gradeLevel" style="height: 31px;">Private | PK</div>
+  <div class="js-schoolName full-width notranslate" style="height: 21px;"><a style="line-height: 1.1em" class="open-sans_sb mbs font-size-medium" href="detail.html">Timpany School
+</a></div>
+  <div class="ptm full-width js-gradeLevel" style="height: 31px;">Marathali , bangalore-16</div>
 </div>              <div class="ptl tac">
     <div class="pbm phl">
       <button class="btn btn-default tal clearfix js-save-this-school-button" data-link-value="4491" style="width:80%" rel="" data-link-use-new-window="">
@@ -1206,14 +1130,14 @@ color:black;
 
     
     <div class="phm">
-  <span class="open-sans_sb">GreatSchools Rating</span><br>
+  <span class="open-sans_sb">SchoolCounty Rating</span><br>
 </div>
 
 
 <div class="phm">
   <table class="full-width">
         <tbody><tr>
-          <td>GreatSchools rating</td>
+          <td>SchoolCounty rating</td>
           <td class="tac open-sans_sb" style="width: 40px">
 <div class="gs-rating-sm  ma">
   <div class="dib">
@@ -1259,7 +1183,7 @@ color:black;
           <td class="tac open-sans_sb" style="width: 40px"><div class="pr js-compareNoDataWrapper">
   <div class="pointer js-compareNoDataSymbol"><i class="iconx16 i-16-question-mark"></i></div>
   <div class="panel pa dn tal pal font-size-xs open-sans js-compareNoDataPopup">
-    This school has not provided GreatSchools with information about this program/service.
+    This school has not provided SchoolCounty with information about this program/service.
     Contact the school directly to find out more.
   </div>
 </div></td>
@@ -1272,7 +1196,7 @@ color:black;
           <td class="tac open-sans_sb" style="width: 40px"><div class="pr js-compareNoDataWrapper">
   <div class="pointer js-compareNoDataSymbol"><i class="iconx16 i-16-question-mark"></i></div>
   <div class="panel pa dn tal pal font-size-xs open-sans js-compareNoDataPopup">
-    This school has not provided GreatSchools with information about this program/service.
+    This school has not provided SchoolCounty with information about this program/service.
     Contact the school directly to find out more.
   </div>
 </div></td>
@@ -1285,7 +1209,7 @@ color:black;
           <td class="tac open-sans_sb" style="width: 40px"><div class="pr js-compareNoDataWrapper">
   <div class="pointer js-compareNoDataSymbol"><i class="iconx16 i-16-question-mark"></i></div>
   <div class="panel pa dn tal pal font-size-xs open-sans js-compareNoDataPopup">
-    This school has not provided GreatSchools with information about this program/service.
+    This school has not provided SchoolCounty with information about this program/service.
     Contact the school directly to find out more.
   </div>
 </div></td>
@@ -1298,7 +1222,7 @@ color:black;
           <td class="tac open-sans_sb" style="width: 40px"><div class="pr js-compareNoDataWrapper">
   <div class="pointer js-compareNoDataSymbol"><i class="iconx16 i-16-question-mark"></i></div>
   <div class="panel pa dn tal pal font-size-xs open-sans js-compareNoDataPopup">
-    This school has not provided GreatSchools with information about this program/service.
+    This school has not provided SchoolCounty with information about this program/service.
     Contact the school directly to find out more.
   </div>
 </div></td>
@@ -1320,7 +1244,7 @@ color:black;
           <td class="tac open-sans_sb" style="width: 40px"><div class="pr js-compareNoDataWrapper">
   <div class="pointer js-compareNoDataSymbol"><i class="iconx16 i-16-question-mark"></i></div>
   <div class="panel pa dn tal pal font-size-xs open-sans js-compareNoDataPopup">
-    This school has not provided GreatSchools with information about this program/service.
+    This school has not provided SchoolCounty with information about this program/service.
     Contact the school directly to find out more.
   </div>
 </div></td>
@@ -1333,7 +1257,7 @@ color:black;
           <td class="tac open-sans_sb" style="width: 40px"><div class="pr js-compareNoDataWrapper">
   <div class="pointer js-compareNoDataSymbol"><i class="iconx16 i-16-question-mark"></i></div>
   <div class="panel pa dn tal pal font-size-xs open-sans js-compareNoDataPopup">
-    This school has not provided GreatSchools with information about this program/service.
+    This school has not provided SchoolCounty with information about this program/service.
     Contact the school directly to find out more.
   </div>
 </div></td>
@@ -1346,7 +1270,7 @@ color:black;
           <td class="tac open-sans_sb" style="width: 40px"><div class="pr js-compareNoDataWrapper">
   <div class="pointer js-compareNoDataSymbol"><i class="iconx16 i-16-question-mark"></i></div>
   <div class="panel pa dn tal pal font-size-xs open-sans js-compareNoDataPopup">
-    This school has not provided GreatSchools with information about this program/service.
+    This school has not provided SchoolCounty with information about this program/service.
     Contact the school directly to find out more.
   </div>
 </div></td>
@@ -1359,7 +1283,7 @@ color:black;
           <td class="tac open-sans_sb" style="width: 40px"><div class="pr js-compareNoDataWrapper">
   <div class="pointer js-compareNoDataSymbol"><i class="iconx16 i-16-question-mark"></i></div>
   <div class="panel pa dn tal pal font-size-xs open-sans js-compareNoDataPopup">
-    This school has not provided GreatSchools with information about this program/service.
+    This school has not provided SchoolCounty with information about this program/service.
     Contact the school directly to find out more.
   </div>
 </div></td>
@@ -1463,7 +1387,7 @@ color:black;
   </div>
 </div>              <div class="ptl tac">
     <div class="pbm phl">
-      <button class="btn btn-primary tac clearfix js-button-link" data-link-value="https://www.greatschools.org/missouri/moberly/4491-Zion-Lutheran-Pre-School/" style="width:80%" rel="" data-link-use-new-window="">
+      <button class="btn btn-primary tac clearfix js-button-link" data-link-value="https://www.SchoolCounty.org/missouri/moberly/4491-Zion-Lutheran-Pre-School/" style="width:80%" rel="" data-link-use-new-window="">
         <span class="vat  mrs"></span>
         View full profile
       </button>
@@ -1475,7 +1399,7 @@ color:black;
       </button>
     </div>
     <div class="pbm phl">
-      <button class="btn btn-default tal clearfix js-button-link" data-link-value="https://www.zillow.com/MO-65270?cbpartner=Great+Schools&amp;utm_source=GreatSchools&amp;utm_medium=referral&amp;utm_campaign=schoolsearch" style="width:80%" rel="nofollow" data-link-use-new-window="true">
+      <button class="btn btn-default tal clearfix js-button-link" data-link-value="https://www.zillow.com/MO-65270?cbpartner=Great+Schools&amp;utm_source=SchoolCounty&amp;utm_medium=referral&amp;utm_campaign=schoolsearch" style="width:80%" rel="nofollow" data-link-use-new-window="true">
         <span class="vat iconx16 i-16-blue-home mrs"></span>
         Homes for sale
       </button>
