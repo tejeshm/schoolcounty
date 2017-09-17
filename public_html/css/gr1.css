@@ -4038,22 +4038,7 @@ a:focus.info-circle {
 .ratio-viz-state-avg {
     margin-left: -2px;
 }
-.back-to-top {
-    position: fixed;
-    bottom: 6em;
-    right: 0px;
-    text-decoration: none;
-    display: none;
-    color: white;
-    background-color: #b8bbbe;
-    border-radius: 32px 0 0 32px;
-    padding-left: 15px;
-    padding-right: 28px;
-    font-size: 22px;
-    height: 47px;
-    line-height: 45px;
-    z-index: 10;
-}
+
 .back-to-top .top-icon, .back-to-top .iconx16 {
     position: fixed;
 }
