@@ -216,10 +216,7 @@
 		</div> <!-- cd-tab-filter-wrapper -->
 
 		<section class="cd-gallery">
-			<style>
-			
-			</style>
-
+<div id="map" style="    margin-bottom: 25px;"></div>
 			<ul>
 				<li class="mix color-3 check1 radio2 option3">
 				<div class="row">
@@ -1160,6 +1157,17 @@
 	</div>
 
 </div>
+<script>
+  function myMap() {
+    var mapOptions = {
+      center: new google.maps.LatLng(12.971599, 77.594563),
+      zoom: 10,
+      mapTypeId: google.maps.MapTypeId.HYBRID
+    }
+    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+  }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-bsK7uKZW_RUKxOsHfUFTgXrvjwuWvv0&callback=myMap"></script>
 <script src="custom.js"></script>
 <script src="mixitup.js"></script>
 <script src="filter.js"></script> 

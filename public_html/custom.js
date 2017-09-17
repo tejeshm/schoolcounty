@@ -126,6 +126,11 @@ $(window).scroll(function () {
         $('#back-to-top').tooltip('show');
 
 
+     
+
+
+
+
 
 
   document.onkeydown = function(e) {
