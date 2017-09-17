@@ -2216,6 +2216,7 @@ h2, .h2 {
     padding-top: 10px;
 }
 .static-container {
+  /* background-color: aliceblue;*/
     position: relative;
     margin: auto;
     padding: 0px 10px;
