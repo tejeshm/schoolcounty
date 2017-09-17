@@ -132,7 +132,7 @@ $(window).scroll(function () {
 
 
 
-/*
+
   document.onkeydown = function(e) {
         if (e.ctrlKey && 
             (e.keyCode === 67 || 
@@ -157,6 +157,6 @@ $(window).scroll(function () {
         return false;
     });
 
-*/
+
 
 });
