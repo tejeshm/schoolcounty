@@ -4,6 +4,7 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
+import ListUnit from '../../components/ListUnit'
 import GoogleMapReact from 'google-map-react';
 import * as TodoActions from '../../actions/todos'
 
@@ -18,130 +19,6 @@ class Listing extends Component {
         <main class="cd-main-content" style={{top: '50px'}}>
 
 
-
-          <div class="cd-user-modal"> 
-            <div class="cd-user-modal-container"> 
-              <ul class="cd-switcher">
-                <li><a href="#0">Sign in</a></li>
-                <li><a href="#0">New account</a></li>
-              </ul>
-
-              <div id="cd-login"> 
-                <form class="cd-form">
-                  <p class="fieldset">
-                    <label class="image-replace cd-email" for="signin-email">E-mail</label>
-                    <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail"/>
-                      <span class="cd-error-message">Error message here!</span>
-                  </p>
-
-                  <p class="fieldset">
-                    <label class="image-replace cd-password" for="signin-password">Password</label>
-                    <input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password"/>
-                      <a href="#0" class="hide-password">Hide</a>
-                      <span class="cd-error-message">Error message here!</span>
-                  </p>
-
-                  <p class="fieldset">
-                    <input type="checkbox" id="remember-me" checked/>
-                      <label for="remember-me">Remember me</label>
-                  </p>
-
-                  <p class="fieldset">
-                    <input class="full-width" type="submit" value="Login"/>
-                  </p>
-                </form>
-
-                <p class="cd-form-bottom-message"><a href="#0">Forgot your password?</a></p>
-                
-              </div> 
-
-              <div id="cd-signup"> 
-
-                <div class="cd-form row">
-                  <div class="col-xs-12 col-md-3 col-sm-2">
-                    <a href="#" class="btn btn-lg btn-block omb_btn-facebook" style={{background: '#3b5998'}}>
-                      <i class="fa fa-facebook visible-xs"></i>
-                      <span>Facebook</span>
-                    </a>
-                  </div>
-                  <div class="col-xs-12 col-md-3 col-sm-2">
-                    <a href="#" class="btn btn-lg btn-block omb_btn-twitter" style={{background: '#00aced'}}>
-                      <i class="fa fa-twitter visible-xs"></i>
-                      <span>Twitter</span>
-                    </a>
-                  </div>
-                  <div class="col-xs-12 col-md-3 col-sm-2">
-                    <a href="#" class="btn btn-lg btn-block omb_btn-google" style={{background: '#c32f10'}}>
-                      <i class="fa fa-google-plus visible-xs"></i>
-                      <span>Google+</span>
-                    </a>
-                  </div>
-                  <div class="col-xs-12 col-md-3 col-sm-2">
-                    <a href="#" class="btn btn-lg btn-block omb_btn-linkedin" style={{background: '#a4c639'}}>
-                      <i class="fa fa-linkedin-square visible-xs"></i>
-                      <span>Linkedin</span>
-                    </a>
-                  </div>
-                </div>
-
-
-
-
-
-
-
-                <form class="cd-form">
-                  <p class="fieldset">
-                    <label class="image-replace cd-username" for="signup-username">Username</label>
-                    <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username"/>
-                      <span class="cd-error-message">Error message here!</span>
-                  </p>
-
-                  <p class="fieldset">
-                    <label class="image-replace cd-email" for="signup-email">E-mail</label>
-                    <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail"/>
-                      <span class="cd-error-message">Error message here!</span>
-                  </p>
-
-                  <p class="fieldset">
-                    <label class="image-replace cd-password" for="signup-password">Password</label>
-                    <input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password"/>
-                      <a href="#0" class="hide-password">Hide</a>
-                      <span class="cd-error-message">Error message here!</span>
-                  </p>
-
-                  <p class="fieldset">
-                    <input type="checkbox" id="accept-terms"/>
-                      <label for="accept-terms">I agree to the <a href="#0">Terms & Conditions</a></label>
-                  </p>
-
-                  <p class="fieldset">
-                    <input class="full-width has-padding" type="submit" value="Create account"/>
-                  </p>
-                </form>
-
-                
-              </div> 
-
-              <div id="cd-reset-password"> 
-                <p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
-
-                <form class="cd-form">
-                  <p class="fieldset">
-                    <label class="image-replace cd-email" for="reset-email">E-mail</label>
-                    <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail"/>
-                      <span class="cd-error-message">Error message here!</span>
-                  </p>
-
-                  <p class="fieldset">
-                    <input class="full-width has-padding" type="submit" value="Reset password"/>
-                  </p>
-                </form>
-
-                <p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
-              </div> 
-            </div> 
-          </div> 
 
           <div class="cd-tab-filter-wrapper">
             <div class="cd-tab-filter">
@@ -172,68 +49,7 @@ class Listing extends Component {
             </div>
             <ul>
               <li class="mix color-3 check1 radio2 option3">
-                <div class="row">
-                  <div class="col-xs-7 col-sm-5 col-md-7 col-lg-6 clearfix school-info">
-                    <div class=" fl js-schoolPhoto">
-                      <img src="./../assets/img/product.jpg" alt="No school photo available" class="thumbnail-border"/>
-                    </div>
-                    <div class="fl pll">
-                      <div class="ptm notranslate">
-                        <div class="mtm "></div>
-                        <div><a style={{lineHeight: '1.1em'}} class="open-sans_sb mbs font-size-medium rs-schoolName" href="detail.html">Wisdom School
-
-
-                        </a></div>
-                        <div class=" font-size-small rs-schoolAddress">Rajaji Nagar, bangalore-11</div>
-                        <div class="clearfix visible-xs font-size-small">
-                          <div class="prs fl ">Public district</div>
-                          <div class="fl">9-12,http://www.wisdom.in</div>
-                        </div>
-                      </div>
-                      <div class="font-size-small mvm clearfix ptm ">
-                        <div class="fl">
-                          <span class="prm vam"><span class="iconx16-stars i-16-orange-star i-16-star-2"></span><span class="iconx16-stars i-16-grey-star i-16-star-3"></span></span>
-                          <a class="font-size-small js-reviewCount" href="/missouri/moberly/1249-Moberly-Sr.-High-School/#Reviews">16 reviews</a>
-                        </div>
-                        <div class="phm fl">|</div>
-                        <div class="prs fl">Public district</div>
-                        <div class="fl">9-12</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xs-5 col-sm-4 col-md-3 col-lg-4 icons">
-                    <div class="ptl "></div>
-                    <div class="row">
-
-                      
-                      <div class="col-xs-6 col-sm-4 mvl tac">
-                        <a href="/missouri/moberly/1249-Moberly-Sr.-High-School/">
-
-  <span class="gs-rating circle-rating--5 circle-rating--xtra-small ma">
-    5
-  </span>
-
-                          <div class="pts"></div>
-                          <span class="tac font-size-xs db link-darkgray" style={{lineheight: '1.3em'}}>SchoolCounty<br/>Rating</span>
-                        </a>            </div>
-                      
-                      <div class="col-xs-6 col-sm-4 mtl mbs js-schoolFitScore">
-                      </div>
-                    </div>
-                  </div>
-                  
-                  
-                  <div class=" col-sm-3 col-md-2 tar pvl">
-                    <div class="clearfix">
-                      <div class="btn btn-default full-width clearfix mbm db fl js-compareSchoolButton" id="js-compareSchool1249" data-schoolname="Moberly Sr. High School" data-schoolstate="mo" data-schoolid="1249" data-schoolrating="5"
-                           style={{cursor: 'pointer', backgroundColor: '#9dc997',padding: '.6em 2em'}}>
-                        <input type="checkbox" unchecked style={{    margin: '2px !important',    float: 'left'}}/>
-                          <div class="fl js-compareSchoolsButtonText"><a href="compare.html" data-toggle="tooltip" title="Compare">Compare</a></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
+               <ListUnit />
               </li>
               <li class="mix color-2 check2 radio1 option2">
                 <div class="row">
