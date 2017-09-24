@@ -7,6 +7,7 @@ import React from 'react'
 
 import App from './containers/App'
 import Listing from './containers/Listing'
+import SchoolCompare from './containers/SchoolCompare'
 import configure from './store'
 
 const store = configure()
@@ -17,6 +18,7 @@ ReactDOM.render(
     <Router history={history}>
       <Route path="/" component={App}></Route>
         <Route path="/listing" component={Listing}></Route>
+        <Route path="/compare" component={SchoolCompare}></Route>
     </Router>
   </Provider>,
   document.getElementById('root')
