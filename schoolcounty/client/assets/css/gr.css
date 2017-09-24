@@ -6701,7 +6701,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 @font-face {
     font-family: 'opensans-regular';
     src: url("opensans-regular-webfont.eot?");
-    src: local("?"), url(/assets/opensans-regular-webfont-602c8210a5a1548a3ca84c19ffec7969.woff) format("woff"), url(/assets/opensans-regular-webfont-9b5e8c5eff7604c09e64d10be29adc51.ttf) format("truetype"), url(/assets/opensans-regular-webfont-ce09a58c19be8f963291f75917dd1afb.svg#opensans-regular) format("svg");
+    src: local("?"), url(./opensans-regular-webfont-602c8210a5a1548a3ca84c19ffec7969.woff) format("woff"), url(/assets/opensans-regular-webfont-9b5e8c5eff7604c09e64d10be29adc51.ttf) format("truetype"), url(/assets/opensans-regular-webfont-ce09a58c19be8f963291f75917dd1afb.svg#opensans-regular) format("svg");
     font-weight: 400;
     font-style: normal;
 }

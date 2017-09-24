@@ -1,12 +1,15 @@
 
 import React, { Component } from 'react'
 import TodoTextInput from '../TodoTextInput'
+import LogReg from '../LogReg'
+
 
 class Header extends Component {
 
 
   render() {
     return (
+      <div>
         <nav class="main-nav navbar navbar-fixed-top" style={{backgroundColor: 'mediumslateblue'}}>
           <div class="container-fluid">
             <div class="navbar-header">
@@ -25,6 +28,10 @@ class Header extends Component {
             </div>
           </div>
         </nav>
+
+        <LogReg />
+
+    </div>
     )
   }
 }
