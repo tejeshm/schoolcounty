@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 
 class ListUnit extends Component {
-
+    constructor(props) {
+        super(props);
+    }
 
   render() {
     return (
@@ -13,7 +15,7 @@ class ListUnit extends Component {
                     <div class="fl pll">
                       <div class="ptm notranslate">
                         <div class="mtm "></div>
-                        <div><a style={{lineHeight: '1.1em'}} class="open-sans_sb mbs font-size-medium rs-schoolName" href="detail.html">Wisdom School
+                        <div><a style={{lineHeight: '1.1em'}} class="open-sans_sb mbs font-size-medium rs-schoolName" href="detail.html">{this.props.name}
 
 
                         </a></div>
