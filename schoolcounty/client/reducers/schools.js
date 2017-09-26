@@ -20,8 +20,18 @@ const initialState = {
     }
 }
 
-export default handleActions({
-  'get schools' (state, action) {
-    return [{}, ...state]
-  }
-}, initialState)
+console.log(handleActions());
+
+const schools = (state = initialState, action) => {
+    switch (action.type) {
+        case 'get schools':
+            return Object.assign({}, state, { username: action.data.username })
+
+        default:
+            return state
+    }
+}
+
+
+export default schools
+
