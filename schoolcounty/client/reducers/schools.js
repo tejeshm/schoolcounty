@@ -20,12 +20,11 @@ const initialState = {
     }
 }
 
-console.log(handleActions());
 
 const schools = (state = initialState, action) => {
     switch (action.type) {
         case 'get schools':
-            return Object.assign({}, state, { username: action.data.username })
+            return Object.assign({}, state, state)
 
         default:
             return state

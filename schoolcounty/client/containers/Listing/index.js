@@ -4,7 +4,6 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
-import ListUnit from '../../components/ListUnit'
 import GoogleMapReact from 'google-map-react';
 import * as SchoolActions from '../../actions/schools'
 import Listingpage from "../../components/Listingpage/index";
