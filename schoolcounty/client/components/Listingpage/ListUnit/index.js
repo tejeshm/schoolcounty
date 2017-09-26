@@ -62,7 +62,7 @@ class ListUnit extends Component {
                     <div class="clearfix">
                       <div class="btn btn-default full-width clearfix mbm db fl js-compareSchoolButton" id="js-compareSchool1249" data-schoolname="Moberly Sr. High School" data-schoolstate="mo" data-schoolid="1249" data-schoolrating="5"
                            style={{cursor: 'pointer', backgroundColor: '#9dc997',padding: '.6em 2em'}}>
-                        <input type="checkbox" unchecked style={{    margin: '2px !important',    float: 'left'}}/>
+                        <input type="checkbox" style={{    margin: '2px !important',    float: 'left'}}/>
                           <div class="fl js-compareSchoolsButtonText"><a href="compare.html" data-toggle="tooltip" title="Compare">Compare</a></div>
                       </div>
                     </div>

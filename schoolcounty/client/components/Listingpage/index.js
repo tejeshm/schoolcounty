@@ -7,22 +7,19 @@ import { connect } from 'react-redux'
 
 class Listingpage extends Component{
 
-    componentWillMount(){
-        //action to get schools data
-        SchoolActions.getSchools();
 
-    }
 
     render(){
 
         const { schools } = this.props;
 
+
         let schoolListDiv = [];
-        console.log(schools.schoolFilter);
-        for (let schoolIndex in schools.schoolList) {
-            let schoolDetails = schools.schoolList[schoolIndex];
+        let schoolList = schools.list;
+        for (let schoolIndex in schoolList) {
+            let schoolDetails = schoolList[schoolIndex];
             schoolListDiv.push(
-                <li class="mix color-3 check1 radio2 option3">
+                <li class="mix color-3 check1 radio2 option3" key = {schoolIndex}>
                     <ListUnit name={schoolDetails.name} />
                 </li>
             );
@@ -36,20 +33,4 @@ class Listingpage extends Component{
     }
 }
 
-function mapStateToProps(state) {
-    return {
-        schools: state.schools
-    }
-}
-
-
-function mapDispatchToProps(dispatch) {
-    return {
-
-    }
-}
-
-export default connect(
-    mapStateToProps,
-    mapDispatchToProps
-)(Listingpage)
+export default Listingpage;
