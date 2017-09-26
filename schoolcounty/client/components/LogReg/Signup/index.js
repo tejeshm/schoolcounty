@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-Class Singup extends Component{
+class Signup extends Component{
 
 	render(){
 
@@ -73,4 +73,4 @@ Class Singup extends Component{
 }
 
 
-export default Singup
+export default Signup
