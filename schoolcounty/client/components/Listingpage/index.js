@@ -1,8 +1,5 @@
 import React, {Component} from 'react'
 import ListUnit from "./ListUnit/index";
-import * as SchoolActions from '../../actions/schools'
-import { connect } from 'react-redux'
-
 
 
 class Listingpage extends Component{
@@ -20,7 +17,7 @@ class Listingpage extends Component{
             let schoolDetails = schoolList[schoolIndex];
             schoolListDiv.push(
                 <li class="mix color-3 check1 radio2 option3" key = {schoolIndex}>
-                    <ListUnit name={schoolDetails.name} />
+                    <ListUnit name={schoolDetails.name} location={schoolDetails.location} review={schoolDetails.review} website={schoolDetails.website} schoolrating={schoolDetails.schoolrating} />
                 </li>
             );
         }

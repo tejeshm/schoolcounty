@@ -13,7 +13,18 @@ const initialState = {
         level: [],
         typeOfSchool: [],
         typesOfSyllabus: []
+    },
+    schoolUnit:{
+      fetching:false,
+      fetched:false,
+      error:false,
+      nameAdd:[],
+      rating:[],
+        facilities:[],
+        activities:[],
+        diversity:[]
     }
+
 }
 
 
@@ -34,6 +45,18 @@ const schools = (state = initialState, action) => {
                     level: action.payload.levelOfEducation,
                     typeOfSchool: action.payload.type,
                     typesOfSyllabus: action.payload.syllabus
+                }
+            })
+
+        case 'GET_COMPARESCHOOLUNIT_SUCCESS':
+            return Object.assign({},state,{
+                schoolUnit:{
+                    fetched:true,
+                    nameAdd:action.payload.schoolNameAdress,
+                    rating:action.payload.schoolCountyRating,
+                    facilities:action.payload.schoolFacilities,
+                    activities:action.payload.schoolActivites,
+                    diversity:action.payload.schoolDiversity
                 }
             })
 

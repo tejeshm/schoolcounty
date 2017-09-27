@@ -1,13 +1,25 @@
 
 export const getSchoolsList = () => {
     let schoolList = [{
-            name: 'Wisdom School'
+            name: 'Wisdom School',
+            location:'Rajajinagar',
+            review:'16',
+            website:'wisdomschool.edu',
+            schoolrating:'5'
         },
         {
-            name: 'DPS Bangalore South'
+            name: 'DPS Bangalore South',
+            location:'JayaNagar',
+            review:'25',
+            website:'dpssouthbangalore.edu',
+            schoolrating:'4.6'
         },
         {
-            name: 'Timpany School'
+            name: 'Timpany School',
+            location:'Kanakapura',
+            review:'22',
+            website:'timpanybangalore.edu',
+            schoolrating:'3.8'
         }
         ];
     return {type: "GET_SCHOOLS_SUCCESS", payload: schoolList};
@@ -36,4 +48,47 @@ export const getFilterParams = () => {
     let filterParams = {levelOfEducation, syllabus, type}
 
     return {type: "GET_FILTER_PARAMS_SUCCESS", payload: filterParams};
+}
+
+export const getCompareSchoolUnitParams =()=>{
+
+    let schoolNameAdress = [{
+        name: 'DPS South Bangalore',
+        address: 'kanakapura Road,Bangalore-21'
+
+    }]
+
+    let schoolCountyRating = [{
+        schoolscountyrating:'5',
+        testscorerating:'5',
+    }]
+
+    let schoolFacilities = [{
+        studentsenrolled:'500',
+        transportation:'20',
+        beforecare:'6',
+        afterschool:'15',
+    }]
+
+    let schoolActivites = [{
+        worldlanguage:'5',
+        clubs:'15',
+        sports:'18',
+        artsmusic:'5',
+    }]
+
+    let schoolDiversity =[{
+        hindu:'30',
+        muslim:'13',
+        jain:'7',
+        christian:'18',
+        sikh:'12',
+        scst:'13',
+        nri:'7'
+
+    }]
+
+    let schoolUnit ={ schoolNameAdress,schoolCountyRating,schoolFacilities,schoolActivites, schoolDiversity}
+
+    return {type:"GET_COMPARESCHOOLUNIT_SUCCESS",payload:schoolUnit};
 }

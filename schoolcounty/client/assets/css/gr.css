@@ -7131,7 +7131,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
     border-bottom: 2px #25b798 solid;
 }
 .oh {
-    overflow: hidden;
+    /* overflow: hidden;*/
 }
 .oa {
     overflow: auto;

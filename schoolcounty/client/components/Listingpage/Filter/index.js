@@ -82,20 +82,7 @@ class Filter extends Component {
 
                         <ul class="cd-filter-content cd-filters list">
                             {schoolLevelList}
-                            {/*<li>
-                                <input class="filter" data-filter=".check1" type="checkbox" id="checkbox1"/>
-                                <label class="checkbox-label" for="checkbox1">Primary(1st-4th)</label>
-                            </li>
 
-                            <li>
-                                <input class="filter" data-filter=".check2" type="checkbox" id="checkbox2"/>
-                                <label class="checkbox-label" for="checkbox2">Middle(5th-7th)</label>
-                            </li>
-
-                            <li>
-                                <input class="filter" data-filter=".check3" type="checkbox" id="checkbox3"/>
-                                <label class="checkbox-label" for="checkbox3">Secondary(8th-10th)</label>
-                            </li>*/}
                         </ul>
                     </div>
 

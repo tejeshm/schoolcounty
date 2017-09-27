@@ -19,16 +19,16 @@ class ListUnit extends Component {
 
 
                         </a></div>
-                        <div class=" font-size-small rs-schoolAddress">Rajaji Nagar, bangalore-11</div>
+                        <div class=" font-size-small rs-schoolAddress">{this.props.location}</div>
                         <div class="clearfix visible-xs font-size-small">
                           <div class="prs fl ">Public district</div>
-                          <div class="fl">9-12,http://www.wisdom.in</div>
+                          <div class="fl">9-12,{this.props.website}</div>
                         </div>
                       </div>
                       <div class="font-size-small mvm clearfix ptm ">
                         <div class="fl">
                           <span class="prm vam"><span class="iconx16-stars i-16-orange-star i-16-star-2"></span><span class="iconx16-stars i-16-grey-star i-16-star-3"></span></span>
-                          <a class="font-size-small js-reviewCount" href="/missouri/moberly/1249-Moberly-Sr.-High-School/#Reviews">16 reviews</a>
+                          <a class="font-size-small js-reviewCount" href="/missouri/moberly/1249-Moberly-Sr.-High-School/#Reviews">{this.props.review} reviews</a>
                         </div>
                         <div class="phm fl">|</div>
                         <div class="prs fl">Public district</div>
@@ -45,7 +45,7 @@ class ListUnit extends Component {
                         <a href="/missouri/moberly/1249-Moberly-Sr.-High-School/">
 
   <span class="gs-rating circle-rating--5 circle-rating--xtra-small ma">
-    5
+      {this.props.schoolrating}
   </span>
 
                           <div class="pts"></div>
