@@ -7,37 +7,26 @@ class CompareUnit extends Component{
     }
 
     getNameAddress(){
-        const {schoolUnit} =this.props;
-        let nameAdd =[]
-        let details=schoolUnit.schoolNameAdress;
-        for (let typeIndex in details ) {
-            let schoolDetail = details[typeIndex];
-            schoolDetail.push(
-                <div class="mam">
-                    <div class="js-schoolName full-width notranslate" style={{height: " 21px"}}><a
-                        style={{lineHeight: "1.1em"}} class="open-sans_sb mbs font-size-medium"
-                        href="detail.html">{schoolDetail.name}
-                    </a></div>
-                    <div class="ptm full-width js-gradeLevel" style={{height: " 31px"}}>{schoolDetail.address} Road,
-                        bangalore-21
-                    </div>
-                </div>
-            );
-        }
+        const {schoolunit} =this.props;
+        let details= schoolunit;
 
-        return schoolDetail
+        return (
+            <div class="mam">
+                <div class="js-schoolName full-width notranslate" style={{height: " 21px"}}><a
+                    style={{lineHeight: "1.1em"}} class="open-sans_sb mbs font-size-medium"
+                    href="detail.html">{details.name}
+                </a></div>
+                <div class="ptm full-width js-gradeLevel" style={{height: " 31px"}}>{details.address} Road,
+                    bangalore-21
+                </div>
+            </div>
+        );
+
     }
 
     render(){
 
-        const {schoolUnit} =  this.props;
-        console.log(schoolUnit);
-        if (!schoolUnit.fetched) {
-            return null;
-        }
-
-
-        let schoolNamAdd = this.getNameAddress();
+        const {schoolunit} =  this.props;
 
 
         return(
@@ -47,7 +36,7 @@ class CompareUnit extends Component{
                 <div class="clearfix"></div>
                 <div style={{borderRadius:" 4px", border:" 1.5px solid #d3d3d3", width: "260px", backgroundColor: "white"}}>
 
-                    {schoolNamAdd}
+                    {this.getNameAddress()}
 
                 <div class="ptl tac">
                     <div class="pbm phl">

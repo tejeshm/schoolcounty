@@ -82,7 +82,6 @@ class Filter extends Component {
 
                         <ul class="cd-filter-content cd-filters list">
                             {schoolLevelList}
-
                         </ul>
                     </div>
 

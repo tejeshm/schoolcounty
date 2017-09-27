@@ -52,11 +52,7 @@ const schools = (state = initialState, action) => {
             return Object.assign({},state,{
                 schoolUnit:{
                     fetched:true,
-                    nameAdd:action.payload.schoolNameAdress,
-                    rating:action.payload.schoolCountyRating,
-                    facilities:action.payload.schoolFacilities,
-                    activities:action.payload.schoolActivites,
-                    diversity:action.payload.schoolDiversity
+                    schoolList: action.payload
                 }
             })
 

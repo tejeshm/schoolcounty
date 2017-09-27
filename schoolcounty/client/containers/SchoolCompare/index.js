@@ -10,19 +10,31 @@ import * as SchoolUnitAction from '../../actions/schools'
 
 
 class SchoolCompare extends Component {
+
+    constructor(props) {
+        super(props);
+    }
+
     componentWillMount(){
         //action to get schools data
-        this.props.getSchoolUnit();
+        this.props.getSchools();
     }
 
 
     render() {
-        const { todos, actions, children } = this.props
+        const { todos, actions, children , schoolList} = this.props
+        console.log(schoolList);
+        if (!schoolList.fetched){
+             return (<div>
+                 no data
+             </div>)
+        }
+
         return (
             <div>
                 <Header />
 
-                <Comparepage schoolunit={this.props.schools.schoolUnit} />
+                <Comparepage schoolUnits={schoolList.list} />
 
                 <Footer/>
             </div>
@@ -31,15 +43,17 @@ class SchoolCompare extends Component {
 }
 
 function mapStateToProps(state) {
+
     return {
-        schools: state.schools
+        schoolList: state.schools.schoolList,
     }
 }
 
 function mapDispatchToProps(dispatch) {
     return {
-        getSchoolUnit: () => {
-            dispatch(SchoolUnitAction.getCompareSchoolUnitParams());
+        getSchools: () => {
+            console.log('called');
+            dispatch(SchoolUnitAction.getSchoolsList());
         }
     }
 }
