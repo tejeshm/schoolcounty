@@ -3,136 +3,91 @@ import React,{Component} from 'react'
 class Footerlinks extends Component{
     render(){
         return(
-            <footer class="footer1">
+            <footer class="footer rs-new-footer pbm gs-bootstrap">
                 <div class="container">
-
                     <div class="row">
-
-                        <div class="col-lg-3 col-md-3">
-                            <ul class="list-unstyled clear-margins">
-
-                                <li class="widget-container widget_nav_menu">
-
-                                    <h1 class="title-widget">Quick links</h1>
-
-                                    <ul>
-                                        <li><a  href="#"><i class="fa fa-angle-double-right"></i> About Us</a></li>
-                                        <li><a  href="#"><i class="fa fa-angle-double-right"></i> Contact Us</a></li>
-                                        <li><a  href="#"><i class="fa fa-angle-double-right"></i> Success Stories</a></li>
-                                        <li><a  href="#"><i class="fa fa-angle-double-right"></i> PG Courses</a></li>
-                                        <li><a  href="#"><i class="fa fa-angle-double-right"></i> Achiever's Batch</a></li>
-                                        <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Regular Batch</a></li>
-                                        <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Test & Discussion</a></li>
-                                        <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Fast Track T & D</a></li>
-                                    </ul>
-
-                                </li>
-
-                            </ul>
-
-
+                        <div class="col-xs-12 col-sm-6 col-md-5 prl">
+                            <div class="heading">Empowering parents</div>
+                            <p>GreatSchools is the leading national nonprofit empowering parents to unlock educational opportunities for their children. We provide school information and parenting resources to help millions of Indian families choose the right school, support learning at home, and guide their children to great futures.</p>
+                            <br/>
+                                <p>Support GreatSchools in this effort! <a target="_blank" href="https://greatschools.networkforgood.com/">Donate Now!</a></p>
                         </div>
-
-
-
-                        <div class="col-lg-3 col-md-3">
-
-                            <ul class="list-unstyled clear-margins">
-
-                                <li class="widget-container widget_nav_menu">
-
-
-
+                        <div class="col-xs-12 col-sm-6 col-md-7">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-4">
+                                    <div class="heading">Join us</div>
                                     <ul>
-                                        <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Test Series Schedule</a></li>
-                                        <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Postal Coaching</a></li>
-                                        <li><a  href="#"><i class="fa fa-angle-double-right"></i>  PG Dr. Bhatia Books</a></li>
-                                        <li><a  href="#"><i class="fa fa-angle-double-right"></i>  UG Courses</a></li>
-                                        <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Satellite Education</a></li>
-                                        <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Study Centres</a></li>
-                                        <li><a  href="#"><i class="fa fa-angle-double-right"></i>  State P.G. Mocks</a></li>
-                                        <li><a  href="#" target="_blank"><i class="fa fa-angle-double-right"></i> Results</a></li>
-
+                                        <li>
+                                            <a href="/gk/supporters/">Supporters</a>
+                                        </li>
+                                        <li>
+                                            <a href="/gk/licensing/">Licensing</a>
+                                        </li>
+                                        <li>
+                                            <a href="/gk/sponsorship/">Sponsorship</a>
+                                        </li>
+                                        <li>
+                                            <a href="/gk/advertising/">Advertising</a>
+                                        </li>
+                                        <li>
+                                            <a href="/gk/careers/">Careers</a>
+                                        </li>
                                     </ul>
-
-                                </li>
-
-                            </ul>
-
-
-                        </div>
-
-
-
-                        <div class="col-lg-3 col-md-3">
-
-                            <ul class="list-unstyled clear-margins">
-
-                                <li class="widget-container widget_nav_menu">
-
-
-
+                                </div>
+                                <div class="col-xs-12 col-md-4">
+                                    <div class="heading">Learn more</div>
                                     <ul>
-
-
-                                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Enquiry Form</a></li>
-                                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Online Test Series</a></li>
-                                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Grand Tests Series</a></li>
-                                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Subject Wise Test Series</a></li>
-                                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Smart Book</a></li>
-                                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Test Centres</a></li>
-                                        <li><a href="#"><i class="fa fa-angle-double-right"></i>  Admission Form</a></li>
-                                        <li><a href="#"><i class="fa fa-angle-double-right"></i>  Computer Live Test</a></li>
-
+                                        <li><a href="javascript:void(0)" class="js-send-me-updates-button-footer">Newsletter</a></li>
+                                        <li>
+                                            <a href="/gk/privacy/">Privacy policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="/gk/terms/">Terms of use</a>
+                                        </li>
+                                        <li>
+                                            <a href="/gk/about/">About us</a>
+                                        </li>
+                                        <li>
+                                            <a href="/gk/contact/">Contact us</a>
+                                        </li>
                                     </ul>
-
-                                </li>
-
-                            </ul>
-
-
-                        </div>
-
-
-                        <div class="col-lg-3 col-md-3">
-
-
-
-                            <ul class="list-unstyled clear-margins">
-
-                                <li class="widget-container widget_recent_news">
-
-                                    <h1 class="title-widget">Contact Detail </h1>
-
-                                    <div class="footerp">
-
-                                        <h2 class="title-median">SchoolCounty</h2>
-                                        <p><b>Email id:</b> <a href="mailto:info@webenlance.com">info@schoolcounty.com</a></p>
-                                        <p><b>Helpline Numbers </b>
-
-                                            <b style={{color: '#ffc106'}}>(8AM to 10PM):</b>  +91-813ZXC90, +91-81MBN0010  </p>
-
-                                        <p><b>Corp Office / Postal Address</b></p>
-                                        <p><b>Phone Numbers : </b>704QWE160, </p>
-                                        <p> 011-27568832, 9868387223</p>
-                                    </div>
-
-                                    <div class="social-icons">
-
-                                        <ul class="nomargin">
-
-                                            <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social-fb" id="social"></i></a>
-                                            <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social-tw" id="social"></i></a>
-                                            <a href="https://plus.google.com/+Bootsnipp-page"><i class="fa fa-google-plus-square fa-3x social-gp" id="social"></i></a>
-                                            <a href="mailto:bootsnipp@gmail.com"><i class="fa fa-envelope-square fa-3x social-em" id="social"></i></a>
-                                            <a href="mailto:linkedin@gmail.com"><i class="fa fa-linkedin-square fa-3x social-fb" id="social"></i></a>
-
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
+                                </div>
+                                <div class="col-xs-12 col-md-4">
+                                    <div class="heading">Connect</div>
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.facebook.com/greatschools">
+                                                <span class="i-16-f-facebook"></span><span class="pls">Facebook</span>
+                                            </a>                </li>
+                                        <li>
+                                            <a href="https://www.twitter.com/greatschools">
+                                                <span class="i-16-f-twitter"></span><span class="pls">Twitter</span>
+                                            </a>                </li>
+                                        <li>
+                                            <a href="https://pinterest.com/greatschools/">
+                                                <span class="i-16-f-pinterest"></span><span class="pls">Pinterest</span>
+                                            </a>                </li>
+                                        <li>
+                                            <a href="https://www.youtube.com/SchoolCounty">
+                                                <span class="i-16-f-youtube"></span><span class="pls">YouTube</span>
+                                            </a>                </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/SchoolCounty/">
+                                                <span class="i-16-f-instagram"></span><span class="pls">Instagram</span>
+                                            </a>                </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <div class="tac mtl">
+                    <div>
+                        <p><small>©2017 SchoolCounty.org All Rights Reserved. SchoolCounty is a 501(c)(3) not-for-profit organization
+                            | <a class="js-no_ad" href="/gk/privacy/#advertiserNotice"></a></small><a class="js-no_ad" href="/gk/privacy/#advertiserNotice">Ad Choices <span class="iconx16 i-16-adChoice vam smaller bottom"></span></a>
+                        </p>
+                    </div>
+
                 </div>
             </footer>
         )

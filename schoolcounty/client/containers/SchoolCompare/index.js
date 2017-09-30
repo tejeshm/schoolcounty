@@ -23,7 +23,11 @@ class SchoolCompare extends Component {
 
     render() {
         const { todos, actions, children , schoolList} = this.props
+        console.log("hi");
         console.log(schoolList);
+        for(let units in schoolList){
+            console.log(units.fetched);
+        }
         if (!schoolList.fetched){
              return (<div>
                  no data
@@ -34,7 +38,7 @@ class SchoolCompare extends Component {
             <div>
                 <Header />
 
-                <Comparepage schoolUnits={schoolList.list} />
+                <Comparepage schoolUnits={schoolList.schoolList} />
 
                 <Footer/>
             </div>
@@ -45,7 +49,7 @@ class SchoolCompare extends Component {
 function mapStateToProps(state) {
 
     return {
-        schoolList: state.schools.schoolList,
+        schoolList: state.schools,
     }
 }
 
@@ -53,7 +57,7 @@ function mapDispatchToProps(dispatch) {
     return {
         getSchools: () => {
             console.log('called');
-            dispatch(SchoolUnitAction.getSchoolsList());
+            dispatch(SchoolUnitAction.getCompareSchoolUnitParams());
         }
     }
 }

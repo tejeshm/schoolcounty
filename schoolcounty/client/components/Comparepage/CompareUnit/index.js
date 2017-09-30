@@ -24,6 +24,8 @@ class CompareUnit extends Component{
 
     }
 
+
+
     render(){
 
         const {schoolunit} =  this.props;

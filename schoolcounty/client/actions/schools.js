@@ -50,9 +50,8 @@ export const getFilterParams = () => {
     return {type: "GET_FILTER_PARAMS_SUCCESS", payload: filterParams};
 }
 
-/*
-export const getCompareSchoolUnitParams =()=>{
 
+export const getCompareSchoolUnitParams =()=>{
 
     let schoolList = [
         {
@@ -137,4 +136,4 @@ export const getCompareSchoolUnitParams =()=>{
 
 
     return {type:"GET_COMPARESCHOOLUNIT_SUCCESS",payload:schoolList};
-}*/
+}
