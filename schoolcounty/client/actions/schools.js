@@ -181,9 +181,9 @@ export const getCompareSchoolDetailsParams =()=>{
                 comment3date:'January 28, 2013',
                 comment4date:'June 10, 2012',
 
-            },
+            }
 
-             schoolCountyRating : {
+           /*  schoolCountyRating : {
 
                 testscorerating:'5',
             },
@@ -211,7 +211,7 @@ export const getCompareSchoolDetailsParams =()=>{
                 scst:'13',
                 nri:'7'
 
-            }
+            }*/
         };
 
     return {type:"GET_COMPARESCHOOLDETAIL_SUCCESS",payload:schoolDetails};
