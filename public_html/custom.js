@@ -133,7 +133,7 @@ $(window).scroll(function () {
 
 
 
-  document.onkeydown = function(e) {
+  /*document.onkeydown = function(e) {
         if (e.ctrlKey && 
             (e.keyCode === 67 || 
              e.keyCode === 86 || 
@@ -156,7 +156,7 @@ $(window).scroll(function () {
     $("body").on("contextmenu",function(e){
         return false;
     });
-
+*/
 
 
 });
