@@ -3,7 +3,6 @@ import React,{Component} from 'react'
 import CompareUnit from './CompareUnit/index'
 import CompareFilter from './CompareFilter/index'
 import {getSchoolsList} from "../../actions/schools";
-import {getCompareSchoolUnitParams} from "../../actions/schools"
 
 class Comparepage extends Component{
     constructor(props){

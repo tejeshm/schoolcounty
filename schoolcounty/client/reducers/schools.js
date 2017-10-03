@@ -23,6 +23,13 @@ const initialState = {
         facilities:[],
         activities:[],
         diversity:[]
+    },
+    schoolDetail:{
+      fetching:false,
+        fetched:false,
+        error:false,
+        schoolDetail:[]
+
     }
 
 }
@@ -53,6 +60,14 @@ const schools = (state = initialState, action) => {
                 schoolUnit:{
                     fetched:true,
                     schoolList: action.payload
+                }
+            })
+
+        case 'GET_COMPARESCHOOLDETAIL_SUCCESS':
+            return Object.assign({},state,{
+                schoolDetail:{
+                    fetched:true,
+                    schoolDetail:action.payload
                 }
             })
 

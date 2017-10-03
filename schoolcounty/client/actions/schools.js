@@ -5,14 +5,49 @@ export const getSchoolsList = () => {
             location:'Rajajinagar',
             review:'16',
             website:'wisdomschool.edu',
-            schoolrating:'5'
+            schoolrating:'5',
+            testscorerating:'5',
+            studentsenrolled:'500',
+            transportation:'20',
+            beforecare:'6',
+            afterschool:'15',
+            worldlanguage:'5',
+            clubs:'15',
+            sports:'18',
+            artsmusic:'5',
+            hindu:'30',
+            muslim:'13',
+            jain:'7',
+            christian:'18',
+            sikh:'12',
+            scst:'13',
+            nri:'7'
+
         },
         {
             name: 'DPS Bangalore South',
             location:'JayaNagar',
             review:'25',
             website:'dpssouthbangalore.edu',
-            schoolrating:'4.6'
+            schoolrating:'4.6',
+            testscorerating:'5',
+            studentsenrolled:'500',
+            transportation:'20',
+            beforecare:'6',
+            afterschool:'15',
+            worldlanguage:'5',
+            clubs:'15',
+            sports:'18',
+            artsmusic:'5',
+            hindu:'30',
+            muslim:'13',
+            jain:'7',
+            christian:'18',
+            sikh:'12',
+            scst:'13',
+            nri:'7'
+
+
         },
         {
             name: 'Timpany School',
@@ -51,9 +86,10 @@ export const getFilterParams = () => {
 }
 
 
-export const getCompareSchoolUnitParams =()=>{
+export const getCompareSchoolDetailsParams =()=>{
 
-    let schoolList = [
+
+    let schoolDetails =
         {
             schoolNameAdress : {
                 name: 'DPS South Bangalore',
@@ -90,50 +126,7 @@ export const getCompareSchoolUnitParams =()=>{
                 nri:'7'
 
             }
-        },
-        {
-            schoolNameAdress : {
-                name: 'DPS South Bangalore',
-                address: 'kanakapura Road,Bangalore-21'
+        };
 
-            },
-
-            schoolCountyRating : {
-                schoolscountyrating:'5',
-                testscorerating:'5',
-            },
-
-            schoolFacilities : {
-                studentsenrolled:'500',
-                transportation:'20',
-                beforecare:'6',
-                afterschool:'15',
-            },
-
-            schoolActivites : {
-                worldlanguage:'5',
-                clubs:'15',
-                sports:'18',
-                artsmusic:'5',
-            },
-
-            schoolDiversity :{
-                hindu:'30',
-                muslim:'13',
-                jain:'7',
-                christian:'18',
-                sikh:'12',
-                scst:'13',
-                nri:'7'
-
-            }
-        }
-    ];
-
-
-
-
-
-
-    return {type:"GET_COMPARESCHOOLUNIT_SUCCESS",payload:schoolList};
+    return {type:"GET_COMPARESCHOOLDETAIL_SUCCESS",payload:schoolDetails};
 }
