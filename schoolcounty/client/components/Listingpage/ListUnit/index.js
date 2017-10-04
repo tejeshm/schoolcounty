@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {Link} from 'react-router'
 
 class ListUnit extends Component {
     constructor(props) {
@@ -15,10 +16,10 @@ class ListUnit extends Component {
                     <div class="fl pll">
                       <div class="ptm notranslate">
                         <div class="mtm "></div>
-                        <div><a style={{lineHeight: '1.1em'}} class="open-sans_sb mbs font-size-medium rs-schoolName" href="detail.html">{this.props.name}
+                        <div><Link style={{lineHeight: '1.1em'}} class="open-sans_sb mbs font-size-medium rs-schoolName" to={"/details"}>{this.props.name}
 
 
-                        </a></div>
+                        </Link></div>
                         <div class=" font-size-small rs-schoolAddress">{this.props.location}</div>
                         <div class="clearfix visible-xs font-size-small">
                           <div class="prs fl ">Public district</div>
@@ -63,7 +64,7 @@ class ListUnit extends Component {
                       <div class="btn btn-default full-width clearfix mbm db fl js-compareSchoolButton" id="js-compareSchool1249" data-schoolname="Moberly Sr. High School" data-schoolstate="mo" data-schoolid="1249" data-schoolrating="5"
                            style={{cursor: 'pointer', backgroundColor: '#9dc997',padding: '.6em 2em'}}>
                         <input type="checkbox" style={{    margin: '2px !important',    float: 'left'}}/>
-                          <div class="fl js-compareSchoolsButtonText"><a href="compare.html" data-toggle="tooltip" title="Compare">Compare</a></div>
+                          <div class="fl js-compareSchoolsButtonText"><Link to={"/compare"} data-toggle="tooltip" title="Compare">Compare</Link></div>
                       </div>
                     </div>
                   </div>

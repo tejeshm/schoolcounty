@@ -1,4 +1,5 @@
 import React,{Component} from 'react'
+import {Link} from 'react-router'
 
 class CompareFilter extends Component{
     render(){
@@ -8,7 +9,7 @@ class CompareFilter extends Component{
 
                 <div class="actions" style={{float:" right"}}>
 
-                    <a href="listing.html" class="filter" style={{cursor:" pointer", backgroundColor: "#9dc997", padding: ".6em 2em", marginLeft: "1.6em"}}>Reset</a>
+                    <Link to={"/listing"} class="filter" style={{cursor:" pointer", backgroundColor: "#9dc997", padding: ".6em 2em", marginLeft: "1.6em"}}>Reset</Link>
                 </div>
             </header>
         )

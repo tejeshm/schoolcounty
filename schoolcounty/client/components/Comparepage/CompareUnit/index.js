@@ -1,4 +1,5 @@
 import React,{Component} from 'react'
+import {Link} from 'react-router'
 
 class CompareUnit extends Component{
 
@@ -12,10 +13,11 @@ class CompareUnit extends Component{
 
         return (
             <div class="mam">
-                <div class="js-schoolName full-width notranslate" style={{height: " 21px"}}><a
+                <div class="js-schoolName full-width notranslate" style={{height: " 21px"}}>
+                    <Link
                     style={{lineHeight: "1.1em"}} class="open-sans_sb mbs font-size-medium"
-                    href="detail.html">{details.name}
-                </a></div>
+                    to={"/details"}>{details.name}
+                </Link></div>
                 <div class="ptm full-width js-gradeLevel" style={{height: " 31px"}}>{details.address} Road,
                     bangalore-21
                 </div>
